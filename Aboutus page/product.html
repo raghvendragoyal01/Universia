@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="Universia logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h1>Our Products</h1>
+        <div class="product-cards">
+            <div class="product-card">
+                <img src="1.jpg" alt="Product 1">
+                <h3>UNIVERSIA FNOS Series 75 mm</h3>
+                <p>Focal lenght - 500mm
+                   Apareture - 75mm
+                   Achromatic lenses 
+                   Mount - AZ
+                   Max Zoom - 150x
+                </p>
+                <p class="price">9,000 INR</p>
+                <button class="add-to-cart" onclick="addToCartss('Product 1')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="2.jpg" alt="Product 2">
+                <h3>UNIVERSIA FNOS Series 127 mm</h3>
+                <p>Focal lenght - 900mm
+                    Apareture - 127mm
+                    Spherical mirror 
+                    Mount - AZ
+                    Max Zoom - 254x</p>
+                <p class="price">17,000 INR</p>
+                <button class="add-to-cart" onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="3.jpg" alt="Product 3">
+                <h3>UNIVERSIA FNOS Series 60 mm</h3>
+                <p>Focal lenght - 700mm
+                    Apareture - 60mm
+                    Achromatic lenses 
+                    Mount - AZ
+                    Max Zoom - 120x</p>
+                <p class="price">7,000 INR</p>
+                <button class="add-to-cart" onclick="addToCarts('Product 3')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Universia | All rights reserved.</p>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

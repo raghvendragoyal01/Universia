@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000; /* Set background to black */
+    color: #fff; /* Set text color to white */
+}
+
+header {
+    background: #000;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #9b59b6;
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 120px 20px 50px; /* Added padding for header */
+}
+
+.products h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #222; /* Dark background for product cards */
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Hover effect for card */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #9b59b6, #8e44ad); /* Gradient effect */
+    -webkit-background-clip: text; /* Apply gradient to text */
+    color: transparent; /* Make the text transparent to show gradient */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.product-card h3:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+    background: linear-gradient(to left, #9b59b6, #8e44ad); /* Reverse gradient effect on hover */
+    -webkit-background-clip: text;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #bbb; /* Lighter color for description */
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.25rem;
+    color: #9b59b6; /* Violet color for price */
+    font-weight: bold;
+}
+
+.product-card .add-to-cart {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #8e44ad;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+}

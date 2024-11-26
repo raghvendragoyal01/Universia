@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Universia logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="tickets.html" class="active">Book Tickets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Book Tickets Section -->
+    <section class="book-tickets">
+        <h1>Upcoming Events</h1>
+        <div class="events-list">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <img src="book tickets page/1.jpg" alt="Galaxy Exploration Tour">
+                <h2>Star Gazing at Nagtibba</h2>
+                <p><strong>Date:</strong> 14th-15th December</p>
+                <p>Join us for an immersive journey of satrgazing at Nagtibba.</p>
+                <button class="book-now" onclick="redirectToBooking()">Book Now</button>                <a href="nagtibba.pdf" class="pdf-download" download>Download PDF</a>
+            </div>
+            <!-- Event 2 -->
+            <div class="event-card">
+                <img src="book tickets page/3.jpg" alt="Asteroid Mining Simulation">
+                <h2>Celebrate your birthday under the Stars</h2>
+                <p><strong>Date:</strong> On Demand</p>
+                <p>Celebrate Your Birthday Under the Stars at Nagtibba
+                    Escape the city lights and create unforgettable memories with a magical stargazing experience in the serene Himalayan beauty.</p>
+                    <button class="book-now" onclick="redirectToBookingss()">Book Now</button>               
+                </div>
+            <!-- Event 3 -->
+            <div class="event-card">
+                <img src="book tickets page/2.jpg" alt="Interstellar Science Conference">
+                <h2>Moon Gazing session in Bidholi</h2>
+                <p><strong>Date:</strong> 16th December</p>
+                <p>See Moon in all of it's Glory with our advanced telescope.</p>
+                <button class="book-now" onclick="redirectToBookings()">Book Now</button>             
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Universia | All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="book.js"></script>
+</body>
+</html>
